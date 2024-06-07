@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Layout</title>
+	<style>
+		*{
+			box-sizing: border-box;}
+			body{
+				font-family: Arial;
+				padding: 10px;
+				background-image: url(daun.jpg);
+
+			}
+			p, h2, h5, h3{
+				color: 	white;
+
+			}
+
+			/*style header/blog title*/
+			.header{
+				background: #4f7942;
+				padding: 30px;
+				text-align: center;
+				background-image: url(bg.jpg);
+			}
+			.header h1{
+				font-size: 50px;
+				color:white;
+			}
+
+			/*style the top navigation bar*/
+			.topnav{
+				overflow: hidden;
+				background-color: #9dc183;
+			}
+			/*style the topnav link*/
+			.topnav a{
+				float:left;
+				display: block;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				color: 	white;
+			}
+
+			/*change color on hover*/
+			.topnav a:hover	{
+				background-color:  #4f7942	;
+				color:   #9dc183;
+			}
+
+			/*create two uneical columns that floats next to each other*/
+			/*Left columns*/
+			.leftcolumn{
+				float: left;	
+				width: 75%;
+			}
+
+			/*Right Columns*/
+			.rightcolumns{
+				float: left;
+				width: 25%;
+				background-color: #C5ADED	;
+				padding-left: 20px;
+			}
+			/*fake Image*/
+			.fakeimg{
+				background-color: #9dc183	;
+				width: 100%;
+				padding: 20px;
+			}
+
+			/*Add a card effect for articles*/
+			.card{
+				background-color:#4f7942	;
+				padding:20px;
+				margin-top:20px;
+			}
+
+			/*clear float after the columns*/
+			.row::after{
+				content:"";
+				display:table;
+				clear: both;
+			}
+			/*footer*/
+			.footer{
+				padding: 20px;
+				text-align: center;
+				background: #9dc183	;
+				margin-top:20px;
+			}
+
+			/*Responsive layout - when the screen is less than 800px wide,make the two columns stack on top of each other instead of next to eeach other*/
+			@media screen and (max-width: 800px){
+				.leftcolumn, .rightcolumns{
+					width: 100%;
+					padding: 0;
+				}
+			}
+			/* responsive layout- when the screen is less than 400px wide, make the navigation list stack on the top of each other instead of next to each other*/
+			@media screen and (max-width:400px){
+				.topnav a {
+					float: none;
+					width: 100%;
+				}
+			}
+
+
+		</style>
+
+	</head>
+	<body>
+		<div class="header">
+			<h1>Life In My Lens</h1>
+			<p>Resize the browser windows to see the effect.</p>
+		</div>
+	<div class="topnav">
+		<a href="bunga.html">Flowers</a>
+		<a href="herbal.html">Herbal's</a>
+		<a href="lainnya.html">Other's</a>
+		<a href="index2.html"style="float:right">Home</a></div>
+			<div class="card">
+			<h2>Rekomendasi Herbal yang bisa ditanam di rumah</h2>
+			<p>By <b>Dizamira</b>, May, 03 2024</p>
+			<img src="herbclone.jpeg"height="600px" width="100%"></div>
+			<div class="card">
+			
+			<h3>1. Jahe</h3>
+			<p>By <b>Dizamira</b>, April, 30 2024</p>
+			<img src="jahe.jpg" height="500px" width="100%">
+			<p>Dengan menanam jahe, kamu ikut berkontribusi dalam menjaga kelestarian lingkungan dan membuat tanah menjadi lebih subur. Sekarang kamu tahu betapa menguntungkannya budidaya jahe. Mulai bisnis ini dan dapatkan penghasilan yang stabil.</p>
+			<p>Jahe sering kali dikonsumsi dalam bentuk minuman yang menghangatkan tubuh, namun tanaman ini juga bisa ditambahkan ke dalam makanan atau dipadukan dengan tanaman obat lainnya sehingga menghasilkan menu minuman baru. Ada beberapa jenis jahe, yang semuanya tentu memiliki sejumlah manfaat kesehatan.</p>
+
+
+            <p>Yang asyiknya lagi, bunga mawar ini ngga ribet buat dirawat. Jadi, buat yang pengen taman minimalis tapi tetep kece, tanaman bunga cantik untuk taman minimalis satu ini bisa jadi solusinya. Yuk coba bawa nuansa romantis ke taman rumah dengan bunga mawar yang memukau. </p>
+			</div>
+			<div class="card">
+			<h2> 2. Daun Saga</h2>
+			<p>By <b>Dizamira</b>, Maret, 01 2024</p>
+			<img src="saga.jpg" height="500px" width="100%">
+			<p>Tanaman saga (Abrus precatorius) adalah tumbuhan merambat yang tumbuh liar di hutan, ladang, atau halaman pada ketinggian 300-1000 meter dari permukaan laut. Seluruh bagian tanaman ini bisa dimanfaatkan sebagai obat tradisional, terutama daunnya.
+			</p>
+			<p>Ada berbagai manfaat daun saga yang dipercaya sebagai obat tradisional sejak zaman dulu. Masyarakat umum meyakini manfaat daun saga sebagai obat batuk, pilek, demam, sakit perut, dan berbagai penyakit lainnya</p>
+			</div>
+
+			<div class="card"> 
+			<h2> 3. Daun Kelor</h2>
+			<p>By <b>Dizamira</b>, May, 14 2024</p>
+			<img src="kelor.jpg"height="500px" width="100%">
+		
+			<p>Mengkonsumsi daun kelor secara rutin dapat memperkuat sistem kekebalan tubuh dan mencegah berbagai penyakit. Manfaat lain dari budidaya kelor adalah sebagai sumber bahan baku industri. Biji kelor mengandung minyak yang dapat diekstraksi dan dimanfaatkan dalam produksi kosmetik, sabun, dan lilin.</p>
+			</div>
+			<div class="card">
+			<h2>4. Daun Sirih</h2>
+			<p>By <b>Dizamira</b>, February, 30 2024</p>
+			<img src="sirih.jpg" height="500px" width="100%">
+			<p>Manfaat daun sirih banyak digunakan untuk obat herbal. Tanaman sirih sendiri banyak tumbuh di Indonesia. Memiliki manfaat beragam, daun ini mengandung protein, iodin, sodium, vitamin A, vitamin B1, vitamin B2, asam nikotinat, flavonoid, fenol, tanin, saponin, polifenolat, dan minyak atsiri. Ada dua jenis daun sirih yang biasa dijumpai yakni daun sirih hijau dan sirih merah. Keduanya sama-sama memiliki segudang manfaat untuk kesehatan.</p>
+			</div>
+
+			<div class="card"> 
+			<h2> 5. Bunga Telang</h2>
+			<p>By <b>Dizamira</b>, Oktober, 30 2024</p>
+			<img src="telang.jpg"height="500px" width="100%">
+		
+			<p>Sebuah penelitian yang menilai efektivitas larutan bubuk bunga telang, peneliti telah menemukan bahwa manfaat bunga telang secara signifikan dapat mengurangi suhu tubuh ketika seseorang menderita demam yang disebabkan peradangan. Ini berkat kandungan flavonoid, antioksidan kuat yang bermanfaat sebagai antiinflamasi dan sistem kekebalan tubuh. </p>
+			</div>
+			<div class="card"> 
+			<h2> 6. Kunyit</h2>
+			<p>By <b>Dizamira</b>, january, 21 2024</p>
+			<img src="kunyit.jpg"height="500px" width="100%">
+		
+			<p> Manfaat yang akan kamu dapatakn jika menanam kunyit, yaitu sebagai bahan obat tradisional, bahan baku industri jamu dan kosmetik, bahan bumbu masak, peternakan, dan lain-lain. Di samping itu rimpang tanaman kunyit juga bermanfaat sebagai anti inflamasi, anti oksidan, anti mikroba, pencegah kanker, dan anti tumor</p>
+			</div>
+			<div class="card"> 
+			<h2> 7. Sereh</h2>
+			<p>By <b>Dizamira</b>, Desember, 16 2024</p>
+			<img src="sereh.jpg"height="500px" width="100%">
+		
+			<p>Sereh menjadi salah satu tanaman rempah yang mengandung nutrisi baik untuk kesehatan tubuh. Tanaman ini mengandung karbohidrat, serat, hingga protein. Selain itu, lemongrass juga mengandung berbagai vitamin yang mampu mengoptimalkan sistem imun tubuh, seperti vitamin A, C, dan B. Lemongrass juga mengandung mineral</p>
+			</div>	 
+		
+
+				<div class="card">
+					<H2> Follow Me</H2>
+					<p>@dza_asmra</p>
+				</div>
+			
+		<div class="footer">
+			<p> Copyright &copy; 2024 Diza Asmiranda</p>
+		</div>
+	</body>
+	</html>

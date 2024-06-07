@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Layout</title>
+	<style>
+		*{
+			box-sizing: border-box;}
+			body{
+				font-family: Arial;
+				padding: 10px;
+				background-image: url(daun.jpg);
+
+			}
+			p, h2, h5, h3{
+				color: 	white;
+
+			}
+
+			/*style header/blog title*/
+			.header{
+				background: #4f7942;
+				padding: 30px;
+				text-align: center;
+				background-image: url(bg.jpg);
+			}
+			.header h1{
+				font-size: 50px;
+				color:white;
+			}
+
+			/*style the top navigation bar*/
+			.topnav{
+				overflow: hidden;
+				background-color: #9dc183;
+			}
+			/*style the topnav link*/
+			.topnav a{
+				float:left;
+				display: block;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				color: 	white;
+			}
+
+			/*change color on hover*/
+			.topnav a:hover	{
+				background-color:  #4f7942	;
+				color:   #9dc183;
+			}
+
+			/*create two uneical columns that floats next to each other*/
+			/*Left columns*/
+			.leftcolumn{
+				float: left;	
+				width: 75%;
+			}
+
+			/*Right Columns*/
+			.rightcolumns{
+				float: left;
+				width: 25%;
+				background-color: #C5ADED	;
+				padding-left: 20px;
+			}
+			/*fake Image*/
+			.fakeimg{
+				background-color: #9dc183	;
+				width: 100%;
+				padding: 20px;
+			}
+
+			/*Add a card effect for articles*/
+			.card{
+				background-color:#4f7942	;
+				padding:20px;
+				margin-top:20px;
+			}
+
+			/*clear float after the columns*/
+			.row::after{
+				content:"";
+				display:table;
+				clear: both;
+			}
+			/*footer*/
+			.footer{
+				padding: 20px;
+				text-align: center;
+				background: #9dc183	;
+				margin-top:20px;
+			}
+
+			/*Responsive layout - when the screen is less than 800px wide,make the two columns stack on top of each other instead of next to eeach other*/
+			@media screen and (max-width: 800px){
+				.leftcolumn, .rightcolumns{
+					width: 100%;
+					padding: 0;
+				}
+			}
+			/* responsive layout- when the screen is less than 400px wide, make the navigation list stack on the top of each other instead of next to each other*/
+			@media screen and (max-width:400px){
+				.topnav a {
+					float: none;
+					width: 100%;
+				}
+			}
+
+
+		</style>
+
+	</head>
+	<body>
+		<div class="header">
+			<h1>Life In My Lens</h1>
+			<p>Resize the browser windows to see the effect.</p>
+		</div>
+	<div class="topnav">
+		<a href="bunga.html">Flowers</a>
+		<a href="herbal.html">Herbal's</a>
+		<a href="lainnya.html">Other's</a>
+		<a href="home.html"style="float:right">Home</a></div>
+		<div class="card">
+			<h2>Rekomendasi Bunga yang cocok di tanam di rumah</h2>
+			<p>By <b>Dizamira</b>, May, 03 2024</p>
+			<img src="flclone.jpeg"height="600px" width="100%"></div>
+			<div class="card">	
+			<h3>1. Mawar Putih</h3>
+			<p>By <b>Dizamira</b>, April, 30 2024</p>
+			<img src="wrose.jpg" height="500px" width="100%">
+			<p>Biar taman minimalis kamu makin tampak wow, coba deh kasih sentuhan bunga mawar. Selain kelihatannya yang cakep banget, aroma bunga mawarbisa membuat hati terasa damai.Nggak cuma itu, warnanya juga bervariasi, jadi bisa disesuaikan sama selera kamu. Mulai dari merah muda yang manis sampai merah yang bikin hati berdetak kencang hingga warna pink yang memancarkan keromantisan.</p>
+
+
+            <p>Yang asyiknya lagi, bunga mawar ini ngga ribet buat dirawat. Jadi, buat yang pengen taman minimalis tapi tetep kece, tanaman bunga cantik untuk taman minimalis satu ini bisa jadi solusinya. Yuk coba bawa nuansa romantis ke taman rumah dengan bunga mawar yang memukau. </p>
+			</div>
+			<div class="card">
+			<h2> 2. Bunga Soka</h2>
+			<p>By <b>Dizamira</b>, Maret, 01 2024</p>
+			<img src="soka.jpeg" height="500px" width="100%">
+			<p>Tanaman satu ini mungkin sering kamu temukan di rumah orang. Tanaman semak satu ini tumbuh cukup lambat sehingga kamu tidak perlu sering-sering memangkasnya. Bunga soka akan sangat cantik saat bermekaran, dengan bunga bunganya yang bergerombol jadi tentunya akan membuat rumahmu menjadi lebih indah.</p>
+			</div>
+
+			<div class="card"> 
+			<h2> 3. Anggrek</h2>
+			<p>By <b>Dizamira</b>, May, 14 2024</p>
+			<img src="angrek.jpg"height="500px" width="100%">
+		
+			<p>Tanaman bunga cantik untuk taman minimalis selanjutnya yang nggak kalah cantik adalah bunga anggrek atau Orchid. Bentuk anggrek yang elegan dan warnanya yang mencolok langsung bikin taman jadi lebih eksotis. Anggrek dikenal karena keindahan bunganya yang unik dan beragam. Ada ribuan spesies anggrek dengan berbagai warna, bentuk, dan ukuran bunga sehingga setiap anggrek punya daya tariknya sendiri.
+
+            Anggrek adalah salah satu tanaman hias yang dapat mekar dalam jangka waktu yang lama. Beberapa jenis anggrek bahkan dapat mekar berbulan-bulan. Dengan segala keindahannya, bunga anggrek bisa jadi pilihan yang cocok untuk kamu agar taman minimalis rumah jadi pusat perhatian tetangga! </p>
+			</div>
+			<div class="card">
+			<h2>4. Bunga Air Mata Pengantin</h2>
+			<p>By <b>Dizamira</b>, February, 30 2024</p>
+			<img src="airmatapengantin.jpeg" height="500px" width="100%">
+			<p>Tanaman hias air mata pengantin memiliki warna yang mencolok dan memikat hati. Bunga ini tersedia dalam berbagai nuansa warna romantis. Kombinasi warna yang berbeda pada satu tanaman membuatnya menjadi pemandangan yang menarik dan menakjubkan di taman atau halaman Anda.</p>
+			<p>Tanaman hias Bunga Air Mata Pengantin memiliki bentuk bunga khas seperti bentuk love kecil yang biasanya berwarna cerah. Inilah yang memberikan warna dan daya tarik utama pada tanaman ini. Selain itu, tanaman ini juga memiliki daun hijau yang menghasilkan kontras yang indah dengan warna bunga yang cerah.</p>
+			</div>
+
+			<div class="card"> 
+			<h2> 5. Kemuning</h2>
+			<p>By <b>Dizamira</b>, Oktober, 30 2024</p>
+			<img src="kemuning.jpg"height="500px" width="100%">
+		
+			<p>Daun kemuning adalah salah satu fitur terpentingnya. Daunnya hijau mengkilap dengan struktur daun majemuk yang terdiri dari 3-7 anak daun. Mereka memiliki aroma yang khas ketika dihancurkan.</p>
+
+           <p> Kemuning menghasilkan bunga-bunga putih kecil yang sangat harum. Wanginya yang khas membuatnya populer sebagai tanaman hias. </p>
+			</div>
+			<div class="card"> 
+			<h2> 6. Daisy</h2>
+			<p>By <b>Dizamira</b>, january, 21 2024</p>
+			<img src="daisy.jpg"height="500px" width="100%">
+		
+			<p> Bunga Daisy atau bunga aster adalah salah satu bunga tercantik di dunia dan pilihan populer untuk ditanam di halaman atau taman rumah.  Dengan kelopak bunga yang kecil serta tampilannya yang indah, cerah, ceria, dan menawan, membuat bunga daisy mudah dikenali juga mempercantik taman mana pun. Kemurnian Cinta dan Kelahiran Bunga daisy juga mudah ditanam dan dapat tumbuh subur pada iklim basah dan kering serta area cerah atau teduh. </p>
+			</div>
+			<div class="card"> 
+			<h2> 7. Double red hisbiscus/ Bunga Sepatu tumpuk</h2>
+			<p>By <b>Dizamira</b>, Desember, 16 2024</p>
+			<img src="bajawa.jpeg"height="500px" width="100%">
+			<p>Bunga ini adalah salah satu jenis bunga sepatu dengan warna yang sangat mencolok.</p>
+		
+			<p>Bunga ini cukup jarang kita lihat, namun pesona rona merahnya sangat memanjakan mata dan menambah keanggunan. </p>
+			</div>	
+			<div class="card"> 
+			<h2> 8. Bunga Sepatu</h2>
+			<p>By <b>Dizamira</b>, September, 10 2024</p>
+			<img src="sepatu.jpg"height="500px" width="100%">
+		
+			<p>Bunga sepatu jadi tanaman bunga cantik untuk taman minimalis yang wajib ada! Dengan kelopak yang mencuri perhatian dan pesona eksotisnya, tanaman ini bakal memberikan sentuhan spektakuler yang menarik mata setiap orang. Bunga sepatu bukan hanya sekedar pemandangan visual yang indah, tetapi juga melibatkan indera penciuman dengan memiliki aroma yang memikat.
+
+
+            Tampil cantik tanpa repot, bunga sepatu cocok untuk kamu si pemilik taman yang menginginkan kesederhanaan tanpa menyepelekan penampilan. Bunga sepatu bisa memberikan keunikan tropis pada taman minimalis kamu! Dengan kemudahan perawatan dan pesonanya yang indah, taman kamu akan menjadi sorotan tetangga!</p>
+			</div>
+				<div class="card"> 
+			<h2> 9. Bunga Sepatu</h2>
+			<p>By <b>Dizamira</b>, February, 17 2024</p>
+			<img src="kertas.jpg"height="500px" width="100%">
+		
+			<p>Bingung mau isi tanaman bunga cantik untuk taman minimalis jenis apa agar tetap tampil cakep? Diazen bisa sulap taman rumah jadi sorotan dengan keindahan bunga bougenville! Udah nggak bisa dipungkiri, tanaman bougenville ini lagi hits dikalangan para pecinta bunga.
+
+            Warna-warni spektakulernya bikin mata kita segar, dan tampilannya yang gaul banget jadi bikin taman jadi kayak tempat pesta bunga! Bougenville memiliki banyak variasi warna, mulai dari merah, biru, pink, sampai putih yang elegan, jadi kamu bisa sesuaikan dengan selera kamu. Yuk beri sentuhan magis pada taman minimalis kamu dengan bunga bougenville. Biar taman jadi tempat paling kece buat foto-foto dan bersantai!</p>
+			</div>	
+
+				<div class="card"> 
+			<h2> 10. Bunga Bakung (Lily)</h2>
+			<p>By <b>Dizamira</b>, January, 30 2024</p>
+			<img src="bakung.jpg"height="500px" width="100%">
+		
+			<p>Bunga lili atau bunga bakung adalah jenis tumbuhan berbunga yang tumbuh dari umbi, semuanya berbunga besar dengan warna menonjol. Merekalah bunga lili sejati. Bunga bakung memiliki warna warna cantik yang memikat hati apalagi saat mereka mekar bersama.</p>
+			</div>	
+
+
+				<div class="card">
+					<H2> Follow Me</H2>
+					<p>@dza_asmra</p>
+				</div>
+			
+		<div class="footer">
+			<p> Copyright &copy; 2024 Diza Asmiranda</p>
+		</div>
+	</body>
+	</html>

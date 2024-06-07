@@ -1,0 +1,207 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Layout</title>
+	<style>
+		*{
+			box-sizing: border-box;}
+			body{
+				font-family: Arial;
+				padding: 10px;
+				background-image: url(daun.jpg);
+
+			}
+			p, h2, h5, h3{
+				color: 	white;
+
+			}
+
+			/*style header/blog title*/
+			.header{
+				background: #4f7942;
+				padding: 30px;
+				text-align: center;
+				background-image: url(bg.jpg);
+			}
+			.header h1{
+				font-size: 50px;
+				color:white;
+			}
+
+			/*style the top navigation bar*/
+			.topnav{
+				overflow: hidden;
+				background-color: #9dc183;
+			}
+			/*style the topnav link*/
+			.topnav a{
+				float:left;
+				display: block;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				color: 	white;
+			}
+
+			/*change color on hover*/
+			.topnav a:hover	{
+				background-color:  #4f7942	;
+				color:   #9dc183;
+			}
+
+			/*create two uneical columns that floats next to each other*/
+			/*Left columns*/
+			.leftcolumn{
+				float: left;	
+				width: 75%;
+			}
+
+			/*Right Columns*/
+			.rightcolumns{
+				float: left;
+				width: 25%;
+				background-color: #C5ADED	;
+				padding-left: 20px;
+			}
+			/*fake Image*/
+			.fakeimg{
+				background-color: #9dc183	;
+				width: 100%;
+				padding: 20px;
+			}
+
+			/*Add a card effect for articles*/
+			.card{
+				background-color:#4f7942	;
+				padding:20px;
+				margin-top:20px;
+			}
+
+			/*clear float after the columns*/
+			.row::after{
+				content:"";
+				display:table;
+				clear: both;
+			}
+			/*footer*/
+			.footer{
+				padding: 20px;
+				text-align: center;
+				background: #9dc183	;
+				margin-top:20px;
+			}
+
+			/*Responsive layout - when the screen is less than 800px wide,make the two columns stack on top of each other instead of next to eeach other*/
+			@media screen and (max-width: 800px){
+				.leftcolumn, .rightcolumns{
+					width: 100%;
+				}
+					padding: 0;
+			}
+			/* responsive layout- when the screen is less than 400px wide, make the navigation list stack on the top of each other instead of next to each other*/
+			@media screen and (max-width:400px){
+				.topnav a {
+					float: none;
+					width: 100%;
+				}
+			}
+
+
+		</style>
+
+	</head>
+	<body>
+		<div class="header">
+			<h1>Life In My Lens</h1>
+			<p>Resize the browser windows to see the effect.</p>
+		</div>
+	<div class="topnav">
+		<a href="bunga.html">Flowers</a>
+		<a href="herbal.html">Herbal's</a>
+		<a href="lainnya.html">Other's</a>
+		<a href="index2.html"style="float:right">Home</a></div>
+			<div class="card">
+			<h2>Rekomendasi Herbal yang bisa ditanam di rumah</h2>
+			<p>By <b>Dizamira</b>, May, 03 2024</p>
+			<img src="syrclone.png"height="600px" width="100%"></div>
+			<div class="card">
+			
+			<h3>1. Selada</h3>
+			<p>By <b>Dizamira</b>, April, 30 2024</p>
+			<img src="selada.jpg" height="500px" width="100%">
+			<p>Selada menyukai cuaca yang sejuk dan tumbuh dengan baik bila ditanam dari benih. </p>			
+			<p>Ini juga merupakan pilihan tepat untuk ditanam di pot dan ambang jendela karena akarnya dangkal. Jaga agar tanaman tetap lembab saat benih bertunas, lalu panen saat daunnya panjangnya beberapa inci..</p>
+
+
+            <p>Yang asyiknya lagi, bunga mawar ini ngga ribet buat dirawat. Jadi, buat yang pengen taman minimalis tapi tetep kece, tanaman bunga cantik untuk taman minimalis satu ini bisa jadi solusinya. Yuk coba bawa nuansa romantis ke taman rumah dengan bunga mawar yang memukau. </p>
+			</div>
+			<div class="card">
+			<h2> 2. Tomat</h2>
+			<p>By <b>Dizamira</b>, Maret, 01 2024</p>
+			<img src="tomat.jpg" height="500px" width="100%">
+			<p>Anda dapat menanam tomat, yang menyukai panas dari biji. Cara lainnya, jika Anda mau, Anda dapat memilih transplantasi.</p>
+			<p>Perhatikan jenis tomat apa yang Anda beli.  Jenis tertentu memiliki buah yang matang dalam waktu singkat, tingginya akan tetap sekitar 30 cm sampai 1,2 meter.</p>
+			<p>Tomat ceri adalah yang terbaik untuk pemula, dan banyak varietas baru tetap bagus dan kompak sehingga ideal untuk ditanam dalam wadah.</p>
+
+			</div>
+
+			<div class="card"> 
+			<h2> 3. Cabai</h2>
+			<p>By <b>Dizamira</b>, May, 14 2024</p>
+			<img src="cabai.jpg"height="500px" width="100%">
+		
+			<p>Cabai menyukai cuaca panas, dan mereka tumbuh dengan baik di tanah, wadah, atau di teras dan dek yang cerah. Transplantasi adalah pilihan yang lebih baik, namun Anda selalu bisa menanam cabai dari biji.</p>
+			</div>
+			<div class="card">
+			<h2>4. Terong</h2>
+			<p>By <b>Dizamira</b>, February, 30 2024</p>
+			<img src="terong.jpg" height="500px" width="100%">
+			<p>Terong adalah tanaman sayuran pecinta panas, dan beberapa jenis lebih lebat sehingga dapat ditanam di pot atau bedengan.</p>
+			<p> Carilah varietas yang menghasilkan terung panjang, ramping, atau bahkan berbentuk bulat. Yang terbaik adalah menggunakan transplantasi kecuali Anda telah memulainya di dalam ruangan sekitar delapan minggu sebelum musim hujan berakhir.</p>
+			</div>
+
+			<div class="card"> 
+			<h2> 5. Bayam</h2>
+			<p>By <b>Dizamira</b>, Oktober, 30 2024</p>
+			<img src="bayam.jpg"height="500px" width="100%">
+		
+			<p>Bayam adalah tanaman sayuran pecinta cuaca dingin. Jika Anda tinggal di iklim panas, cari varietas bayam yang tahan panas.</p>
+		    <p>Anda bisa memetik daun yang muda, atau biarkan matang untuk digunakan sebagai tumis, sup, atau salad.</p>
+			</div>
+			<div class="card"> 
+			<h2> 6. Mentimun</h2>
+			<p>By <b>Dizamira</b>, january, 21 2024</p>
+			<img src="timun.jpg"height="500px" width="100%">
+		
+			<p>Melansir gardeningknowhow.com, mentimun butuh sinar matahari langsung untuk tumbuh subur.</p>
+
+  			<p>Bisa ditanam di pot ataupun pekarangan rumah untuk varietas yang lebih besar.</p>
+
+            <p>Saat menanam mentimun, pilih tempat yang memadai dan tanah yang subur.</p>
+
+            <p>Tanah yang subur biasanya mengandung bahan-bahan organik, seperti kompos.</p>
+			</div>
+			<div class="card"> 
+			<h2> 7. Bawang Merah</h2>
+			<p>By <b>Dizamira</b>, Desember, 16 2024</p>
+			<img src="bmerah.jpg"height="500px" width="100%">
+		
+			<p>Ingin panen bawang tidak lebih dari 3 bulan? Yuk, coba sayuran yang cocok ditanam di pekarangan rumah ini!</p>
+
+			<p>Bawang merah memiliki masa panen sekitar 60 harian saja, terbilang cepat, bukan?</p>
+
+            <p>Bawang merah sebagai rempah-rempah Indonesia tak perlu diragukan lagi manfaatnya.</p>
+ 			<p>Mulai dari bumbu masakan, hingga pengobatan herbal.</p>
+			</div>	 
+		
+
+				<div class="card">
+					<H2> Follow Me</H2>
+					<p>@dza_asmra</p>
+				</div>
+			
+		<div class="footer">
+			<p> Copyright &copy; 2024 Diza Asmiranda</p>
+		</div>
+	</body>
+	</html>
